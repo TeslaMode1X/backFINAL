@@ -16,21 +16,32 @@ services:
       interval: 10s
       retries: 10
       timeout: 5s
-
-  server:
-    container_name: web_prog_2_server
-    restart: always
-    build:
-      context: .
-    env_file:
-      - .env
+  flyway:
+    image: flyway/flyway
+    container_name: web_prog_2_db_flyway_migrations
+    command: -url=jdbc:postgresql://db:5432/${POSTGRES_DB} -user=${POSTGRES_USER} -password=${POSTGRES_PASSWORD} migrate
+    volumes:
+      - ./server/db/flyway.conf:/flyway/conf/flyway.conf
+      - ./server/db/migrations:/flyway/sql
     depends_on:
       db:
         condition: service_healthy
-    ports:
-      - ${SERVER_PORT}:${SERVER_PORT}
     networks:
       - web_prog_net
+  # server:
+  #   container_name: web_prog_2_server
+  #   restart: always
+  #   build:
+  #     context: .
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     db:
+  #       condition: service_healthy
+  #   ports:
+  #     - ${SERVER_PORT}:${SERVER_PORT}
+  #   networks:
+  #     - web_prog_net
 
 networks:
   web_prog_net:
