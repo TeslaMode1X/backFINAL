@@ -62,6 +62,9 @@ app.post('/signin', async (req, res) => {
 });
 
 // TODO
+// migration with table users
+// create container with mongodb and insert fake data with migrations
+// connect to that mongoDB and check its working conditions 
 // update, delete,
 
 (async () => {
