@@ -12,10 +12,10 @@ services:
     networks:
       - web_prog_net
     healthcheck:
-      test: ["CMD", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-      interval: 10s
-      retries: 10
-      timeout: 5s
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}"]
+      interval: 5s
+      retries: 5
+      timeout: 3s
   flyway:
     image: flyway/flyway
     container_name: web_prog_2_db_flyway_migrations
