@@ -21,7 +21,7 @@ app.get('/signin', (req, res) => {
 });
 
 app.post('/login', async (req, res) => {
-    // GETTING CREDENTIALS DROM JSON BODY
+    // GETTING CREDENTIALS FROM JSON BODY
     const { username, password } = req.body;
 
     try {
@@ -61,7 +61,7 @@ app.post('/signin', async (req, res) => {
     }
 });
 
-// хероку, render, 
+// TODO
 // update, delete,
 
 (async () => {
@@ -77,3 +77,6 @@ app.post('/signin', async (req, res) => {
         process.exit(1); 
     }
 })();
+
+// free deploy
+// хероку, render, 
