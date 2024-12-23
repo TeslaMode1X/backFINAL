@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: web_prog_2_db
+    restart: always
+    image: postgres:17
+    env_file:
+      - .env
+    ports:
+      - ${POSTGRES_PORT}:5432 
+    networks:
+      - web_prog_net
+    healthcheck:
+      test: ["CMD", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      retries: 10
+      timeout: 5s
+
+  server:
+    container_name: web_prog_2_server
+    restart: always
+    build:
+      context: .
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    networks:
+      - web_prog_net
+
+networks:
+  web_prog_net:
+    driver: bridge
