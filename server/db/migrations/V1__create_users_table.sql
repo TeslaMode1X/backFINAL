@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS users
     name varchar(255) NOT NULL,
     password varchar(255) NOT NULL
 )
+
