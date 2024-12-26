@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y wget gnupg && \
 
 WORKDIR /app
 
+# scipt for collections data
 COPY mongo_migrations /migrations
+# scipt for inserting data
 COPY run-migrations.js /app/run-migrations.js
 
 CMD ["/bin/sh", "-c", "mongosh --username \"$MONGO_INITDB_ROOT_USERNAME\" --password \"$MONGO_INITDB_ROOT_PASSWORD\" --authenticationDatabase admin \"$MONGO_URI\" /app/run-migrations.js"]

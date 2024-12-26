@@ -22,10 +22,6 @@ services:
     restart: always
     env_file:
       - .env
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
     ports:
       - ${MONGO_PORT}:27017
     volumes:
@@ -59,7 +55,7 @@ services:
     command: -url=jdbc:postgresql://db:5432/${POSTGRES_DB} -user=${POSTGRES_USER} -password=${POSTGRES_PASSWORD} migrate
     volumes:
       - ./server/db/flyway.conf:/flyway/conf/flyway.conf
-      - ./server/db/migrations:/flyway/sql
+      - ./server/db/postgres_migrations:/flyway/sql
     depends_on:
       db:
         condition: service_healthy
