@@ -1,0 +1,2909 @@
+{
+    "operation": "insertMany",
+    "collection": "atyrau",
+    "data": [
+        {
+          "month": "January",
+          "date": "2025-01-01",
+          "temperature": -5,
+          "humidity": 70,
+          "wind_speed": 4.2,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-02",
+          "temperature": -3,
+          "humidity": 65,
+          "wind_speed": 2.5,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-03",
+          "temperature": -1,
+          "humidity": 78,
+          "wind_speed": 6.1,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-04",
+          "temperature": 2,
+          "humidity": 60,
+          "wind_speed": 3.8,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-05",
+          "temperature": 0,
+          "humidity": 72,
+          "wind_speed": 1.9,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-06",
+          "temperature": -2,
+          "humidity": 68,
+          "wind_speed": 5.3,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-07",
+          "temperature": -5,
+          "humidity": 75,
+          "wind_speed": 2.7,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-08",
+          "temperature": -7,
+          "humidity": 62,
+          "wind_speed": 4.9,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-09",
+          "temperature": -9,
+          "humidity": 70,
+          "wind_speed": 7.2,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-10",
+          "temperature": -11,
+          "humidity": 68,
+          "wind_speed": 3.5,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-11",
+          "temperature": -8,
+          "humidity": 77,
+          "wind_speed": 1.8,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-12",
+          "temperature": -6,
+          "humidity": 65,
+          "wind_speed": 5.7,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-13",
+          "temperature": -3,
+          "humidity": 72,
+          "wind_speed": 3.1,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-14",
+          "temperature": -1,
+          "humidity": 60,
+          "wind_speed": 1.4,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-15",
+          "temperature": 1,
+          "humidity": 75,
+          "wind_speed": 4.6,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-16",
+          "temperature": -2,
+          "humidity": 63,
+          "wind_speed": 2.8,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-17",
+          "temperature": -4,
+          "humidity": 71,
+          "wind_speed": 6.2,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-18",
+          "temperature": -6,
+          "humidity": 67,
+          "wind_speed": 3.9,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-19",
+          "temperature": -8,
+          "humidity": 74,
+          "wind_speed": 1.7,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-20",
+          "temperature": -10,
+          "humidity": 61,
+          "wind_speed": 5.1,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-21",
+          "temperature": -12,
+          "humidity": 69,
+          "wind_speed": 2.4,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-22",
+          "temperature": -10,
+          "humidity": 76,
+          "wind_speed": 6.5,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-23",
+          "temperature": -8,
+          "humidity": 64,
+          "wind_speed": 4.2,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-24",
+          "temperature": -6,
+          "humidity": 73,
+          "wind_speed": 1.9,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-25",
+          "temperature": -4,
+          "humidity": 61,
+          "wind_speed": 5.4,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-26",
+          "temperature": -2,
+          "humidity": 68,
+          "wind_speed": 2.7,
+          "weather_condition": "Clear"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-27",
+          "temperature": 0,
+          "humidity": 75,
+          "wind_speed": 4.0,
+          "weather_condition": "Snow"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-28",
+          "temperature": -2,
+          "humidity": 63,
+          "wind_speed": 1.6,
+          "weather_condition": "Cloudy"
+        },
+        {
+          "month": "January",
+          "date": "2025-01-29",
+          "temperature": -4,
+          "humidity": 71,
+          "wind_speed": 5.2,
+          "weather_condition": "Clear"
+        },
+      {
+        "month": "February",
+        "date": "2025-02-01",
+        "temperature": -12, 
+        "humidity": 78, 
+        "wind_speed": 6, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-02",
+        "temperature": -8, 
+        "humidity": 72, 
+        "wind_speed": 4, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-03", 
+        "temperature": -5, 
+        "humidity": 65, 
+        "wind_speed": 8, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-04", 
+        "temperature": -10, 
+        "humidity": 80, 
+        "wind_speed": 3, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-05", 
+        "temperature": -7, 
+        "humidity": 75, 
+        "wind_speed": 5, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-06", 
+        "temperature": -3, 
+        "humidity": 68, 
+        "wind_speed": 7, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-07", 
+        "temperature": -1, 
+        "humidity": 70, 
+        "wind_speed": 2, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-08", 
+        "temperature": 2, 
+        "humidity": 60, 
+        "wind_speed": 4, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-09", 
+        "temperature": -2, 
+        "humidity": 78, 
+        "wind_speed": 6, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-10", 
+        "temperature": -5, 
+        "humidity": 75, 
+        "wind_speed": 3, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-11", 
+        "temperature": -8, 
+        "humidity": 68, 
+        "wind_speed": 5, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-12", 
+        "temperature": -10, 
+        "humidity": 80, 
+        "wind_speed": 7, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-13", 
+        "temperature": -4, 
+        "humidity": 72, 
+        "wind_speed": 2, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-14", 
+        "temperature": -1, 
+        "humidity": 65, 
+        "wind_speed": 4, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-15", 
+        "temperature": 1, 
+        "humidity": 60, 
+        "wind_speed": 6, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-16", 
+        "temperature": -3, 
+        "humidity": 75, 
+        "wind_speed": 3, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-17", 
+        "temperature": -6, 
+        "humidity": 70, 
+        "wind_speed": 5, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-18", 
+        "temperature": -9, 
+        "humidity": 65, 
+        "wind_speed": 7, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-19", 
+        "temperature": -12, 
+        "humidity": 80, 
+        "wind_speed": 2, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-20", 
+        "temperature": -8, 
+        "humidity": 75, 
+        "wind_speed": 4, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-21", 
+        "temperature": -5, 
+        "humidity": 70, 
+        "wind_speed": 6, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-22", 
+        "temperature": -2, 
+        "humidity": 65, 
+        "wind_speed": 3, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-23", 
+        "temperature": 1, 
+        "humidity": 60, 
+        "wind_speed": 5, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-24", 
+        "temperature": -1, 
+        "humidity": 75, 
+        "wind_speed": 7, 
+        "weather_condition": "Clear" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-25", 
+        "temperature": -4, 
+        "humidity": 70, 
+        "wind_speed": 2, 
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-26", 
+        "temperature": -7, 
+        "humidity": 65, 
+        "wind_speed": 4, 
+        "weather_condition": "Cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-27", 
+        "temperature": -10, 
+        "humidity": 80, 
+        "wind_speed": 6, 
+        "weather_condition": "Partly cloudy" 
+      },
+      {
+        "month": "February",
+        "date": "2025-02-28", 
+        "temperature": -12, 
+        "humidity": 75, 
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-01",
+        "temperature": -2,
+        "humidity": 75,
+        "wind_speed": 4,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-02",
+        "temperature": 1,
+        "humidity": 68,
+        "wind_speed": 6,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-03",
+        "temperature": -1,
+        "humidity": 60,
+        "wind_speed": 3,
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "March",
+        "date": "2025-03-04",
+        "temperature": 3,
+        "humidity": 55,
+        "wind_speed": 5,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-05",
+        "temperature": 0,
+        "humidity": 65,
+        "wind_speed": 7,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-06",
+        "temperature": -3,
+        "humidity": 70,
+        "wind_speed": 2,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-07",
+        "temperature": 2,
+        "humidity": 60,
+        "wind_speed": 4,
+        "weather_condition": "Rainy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-08",
+        "temperature": 5,
+        "humidity": 55,
+        "wind_speed": 6,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-09",
+        "temperature": 1,
+        "humidity": 65,
+        "wind_speed": 3,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-10",
+        "temperature": -2,
+        "humidity": 70,
+        "wind_speed": 5,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-11",
+        "temperature": 4,
+        "humidity": 50,
+        "wind_speed": 7,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-12",
+        "temperature": 7,
+        "humidity": 45,
+        "wind_speed": 2,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-13",
+        "temperature": 3,
+        "humidity": 55,
+        "wind_speed": 4,
+        "weather_condition": "Rainy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-14",
+        "temperature": -1,
+        "humidity": 65,
+        "wind_speed": 6,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-15",
+        "temperature": 5,
+        "humidity": 50,
+        "wind_speed": 3,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-16",
+        "temperature": 8,
+        "humidity": 40,
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-17",
+        "temperature": 2,
+        "humidity": 55,
+        "wind_speed": 7,
+        "weather_condition": "Rainy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-18",
+        "temperature": -1,
+        "humidity": 65,
+        "wind_speed": 2,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-19",
+        "temperature": 4,
+        "humidity": 50,
+        "wind_speed": 4,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-20",
+        "temperature": 7,
+        "humidity": 45,
+        "wind_speed": 6,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-21",
+        "temperature": 10,
+        "humidity": 40,
+        "wind_speed": 3,
+        "weather_condition": "Rainy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-22",
+        "temperature": 5,
+        "humidity": 50,
+        "wind_speed": 5,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-23",
+        "temperature": 8,
+        "humidity": 45,
+        "wind_speed": 7,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-24",
+        "temperature": 2,
+        "humidity": 55,
+        "wind_speed": 2,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-25",
+        "temperature": -1,
+        "humidity": 65,
+        "wind_speed": 4,
+        "weather_condition": "Snowy" 
+      },
+      {
+        "month": "March",
+        "date": "2025-03-26",
+        "temperature": 3,
+        "humidity": 50,
+        "wind_speed": 6,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-27",
+        "temperature": 6,
+        "humidity": 45,
+        "wind_speed": 3,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-28",
+        "temperature": 1,
+        "humidity": 55,
+        "wind_speed": 5,
+        "weather_condition": "Rainy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-29",
+        "temperature": -2,
+        "humidity": 65,
+        "wind_speed": 7,
+        "weather_condition": "Cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-30",
+        "temperature": 4,
+        "humidity": 50,
+        "wind_speed": 2,
+        "weather_condition": "Partly cloudy"
+      },
+      {
+        "month": "March",
+        "date": "2025-03-31",
+        "temperature": 3,
+        "humidity": 50,
+        "wind_speed": 6,
+        "weather_condition": "Clear"
+      },
+      {
+        "month": "April",
+        "date": "2025-04-01",
+        "temperature": 6,
+        "humidity": 38,
+        "wind_speed": 8,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-02",
+        "temperature": 11,
+        "humidity": 47,
+        "wind_speed": 4,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-03",
+        "temperature": 8,
+        "humidity": 37,
+        "wind_speed": 5,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-04",
+        "temperature": 8,
+        "humidity": 39,
+        "wind_speed": 6,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-05",
+        "temperature": 14,
+        "humidity": 35,
+        "wind_speed": 3,
+        "weather_condition": "Rainy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-06",
+        "temperature": 12,
+        "humidity": 43,
+        "wind_speed": 6,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-07",
+        "temperature": 6,
+        "humidity": 51,
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-08",
+        "temperature": 17,
+        "humidity": 53,
+        "wind_speed": 3,
+        "weather_condition": "Thunderstorm"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-09",
+        "temperature": 5,
+        "humidity": 49,
+        "wind_speed": 5,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-10",
+        "temperature": 7,
+        "humidity": 36,
+        "wind_speed": 6,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-11",
+        "temperature": 11,
+        "humidity": 30,
+        "wind_speed": 8,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-12",
+        "temperature": 16,
+        "humidity": 52,
+        "wind_speed": 7,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-13",
+        "temperature": 7,
+        "humidity": 49,
+        "wind_speed": 7,
+        "weather_condition": "Rainy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-14",
+        "temperature": 15,
+        "humidity": 41,
+        "wind_speed": 5,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-15",
+        "temperature": 11,
+        "humidity": 40,
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-16",
+        "temperature": 8,
+        "humidity": 45,
+        "wind_speed": 5,
+        "weather_condition": "Rainy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-17",
+        "temperature": 12,
+        "humidity": 30,
+        "wind_speed": 6,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-18",
+        "temperature": 8,
+        "humidity": 38,
+        "wind_speed": 4,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-19",
+        "temperature": 16,
+        "humidity": 59,
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-20",
+        "temperature": 7,
+        "humidity": 43,
+        "wind_speed": 6,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-21",
+        "temperature": 6,
+        "humidity": 59,
+        "wind_speed": 4,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-22",
+        "temperature": 9,
+        "humidity": 34,
+        "wind_speed": 8,
+        "weather_condition": "Thunderstorm"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-23",
+        "temperature": 5,
+        "humidity": 44,
+        "wind_speed": 3,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-24",
+        "temperature": 9,
+        "humidity": 40,
+        "wind_speed": 4,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-25",
+        "temperature": 15,
+        "humidity": 46,
+        "wind_speed": 3,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-26",
+        "temperature": 12,
+        "humidity": 45,
+        "wind_speed": 5,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-27",
+        "temperature": 10,
+        "humidity": 41,
+        "wind_speed": 3,
+        "weather_condition": "Cloudy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-28",
+        "temperature": 5,
+        "humidity": 58,
+        "wind_speed": 7,
+        "weather_condition": "Rainy"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-29",
+        "temperature": 17,
+        "humidity": 55,
+        "wind_speed": 3,
+        "weather_condition": "Clear"
+    },
+    {
+        "month": "April",
+        "date": "2025-04-30",
+        "temperature": 10,
+        "humidity": 44,
+        "wind_speed": 5,
+        "weather_condition": "Partly cloudy"
+    },
+    {
+      "month": "May",
+      "date": "2025-05-01",
+      "temperature": 20,
+      "humidity": 48,
+      "wind_speed": 7,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-02",
+      "temperature": 19,
+      "humidity": 40,
+      "wind_speed": 4,
+      "weather_condition": "Rainy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-03",
+      "temperature": 18,
+      "humidity": 49,
+      "wind_speed": 4,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-04",
+      "temperature": 23,
+      "humidity": 47,
+      "wind_speed": 6,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-05",
+      "temperature": 22,
+      "humidity": 37,
+      "wind_speed": 5,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-06",
+      "temperature": 19,
+      "humidity": 48,
+      "wind_speed": 6,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-07",
+      "temperature": 23,
+      "humidity": 34,
+      "wind_speed": 4,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-08",
+      "temperature": 10,
+      "humidity": 33,
+      "wind_speed": 3,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-09",
+      "temperature": 14,
+      "humidity": 34,
+      "wind_speed": 4,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-10",
+      "temperature": 22,
+      "humidity": 47,
+      "wind_speed": 4,
+      "weather_condition": "Thunderstorm"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-11",
+      "temperature": 20,
+      "humidity": 44,
+      "wind_speed": 5,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-12",
+      "temperature": 16,
+      "humidity": 40,
+      "wind_speed": 6,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-13",
+      "temperature": 18,
+      "humidity": 48,
+      "wind_speed": 3,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-14",
+      "temperature": 16,
+      "humidity": 45,
+      "wind_speed": 5,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-15",
+      "temperature": 21,
+      "humidity": 33,
+      "wind_speed": 4,
+      "weather_condition": "Rainy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-16",
+      "temperature": 12,
+      "humidity": 47,
+      "wind_speed": 4,
+      "weather_condition": "Rainy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-17",
+      "temperature": 17,
+      "humidity": 46,
+      "wind_speed": 4,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-18",
+      "temperature": 13,
+      "humidity": 39,
+      "wind_speed": 3,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-19",
+      "temperature": 24,
+      "humidity": 48,
+      "wind_speed": 6,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-20",
+      "temperature": 12,
+      "humidity": 42,
+      "wind_speed": 5,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-21",
+      "temperature": 21,
+      "humidity": 48,
+      "wind_speed": 3,
+      "weather_condition": "Rainy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-22",
+      "temperature": 11,
+      "humidity": 38,
+      "wind_speed": 4,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-23",
+      "temperature": 22,
+      "humidity": 38,
+      "wind_speed": 4,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-24",
+      "temperature": 15,
+      "humidity": 36,
+      "wind_speed": 6,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-25",
+      "temperature": 22,
+      "humidity": 35,
+      "wind_speed": 7,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-26",
+      "temperature": 20,
+      "humidity": 38,
+      "wind_speed": 5,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-27",
+      "temperature": 12,
+      "humidity": 31,
+      "wind_speed": 6,
+      "weather_condition": "Clear"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-28",
+      "temperature": 13,
+      "humidity": 32,
+      "wind_speed": 4,
+      "weather_condition": "Cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-29",
+      "temperature": 11,
+      "humidity": 41,
+      "wind_speed": 7,
+      "weather_condition": "Partly cloudy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-30",
+      "temperature": 15,
+      "humidity": 45,
+      "wind_speed": 4,
+      "weather_condition": "Rainy"
+  },
+  {
+      "month": "May",
+      "date": "2025-05-31",
+      "temperature": 24,
+      "humidity": 32,
+      "wind_speed": 6,
+      "weather_condition": "Clear"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-01",
+    "temperature": 22,
+    "humidity": 43,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-02",
+    "temperature": 17,
+    "humidity": 36,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-03",
+    "temperature": 17,
+    "humidity": 36,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-04",
+    "temperature": 17,
+    "humidity": 27,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-05",
+    "temperature": 20,
+    "humidity": 42,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-06",
+    "temperature": 15,
+    "humidity": 39,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-07",
+    "temperature": 21,
+    "humidity": 28,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-08",
+    "temperature": 22,
+    "humidity": 38,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-09",
+    "temperature": 28,
+    "humidity": 40,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-10",
+    "temperature": 22,
+    "humidity": 39,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-11",
+    "temperature": 21,
+    "humidity": 42,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-12",
+    "temperature": 16,
+    "humidity": 34,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-13",
+    "temperature": 17,
+    "humidity": 44,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-14",
+    "temperature": 23,
+    "humidity": 31,
+    "wind_speed": 6,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-15",
+    "temperature": 17,
+    "humidity": 36,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-16",
+    "temperature": 19,
+    "humidity": 39,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-17",
+    "temperature": 25,
+    "humidity": 31,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-18",
+    "temperature": 22,
+    "humidity": 28,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-19",
+    "temperature": 15,
+    "humidity": 38,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-20",
+    "temperature": 18,
+    "humidity": 35,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-21",
+    "temperature": 28,
+    "humidity": 25,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-22",
+    "temperature": 17,
+    "humidity": 29,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-23",
+    "temperature": 18,
+    "humidity": 30,
+    "wind_speed": 7,
+    "weather_condition": "Rainy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-24",
+    "temperature": 23,
+    "humidity": 25,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-25",
+    "temperature": 22,
+    "humidity": 31,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-26",
+    "temperature": 20,
+    "humidity": 39,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-27",
+    "temperature": 23,
+    "humidity": 28,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-28",
+    "temperature": 21,
+    "humidity": 26,
+    "wind_speed": 6,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-29",
+    "temperature": 24,
+    "humidity": 29,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "June",
+    "date": "2025-06-30",
+    "temperature": 25,
+    "humidity": 25,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-01",
+    "temperature": 28,
+    "humidity": 25,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-02",
+    "temperature": 20,
+    "humidity": 33,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-03",
+    "temperature": 24,
+    "humidity": 22,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-04",
+    "temperature": 25,
+    "humidity": 38,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-05",
+    "temperature": 28,
+    "humidity": 22,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-06",
+    "temperature": 22,
+    "humidity": 33,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-07",
+    "temperature": 28,
+    "humidity": 25,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-08",
+    "temperature": 27,
+    "humidity": 22,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-09",
+    "temperature": 27,
+    "humidity": 38,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-10",
+    "temperature": 33,
+    "humidity": 31,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-11",
+    "temperature": 25,
+    "humidity": 26,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-12",
+    "temperature": 28,
+    "humidity": 20,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-13",
+    "temperature": 25,
+    "humidity": 33,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-14",
+    "temperature": 23,
+    "humidity": 34,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-15",
+    "temperature": 23,
+    "humidity": 22,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-16",
+    "temperature": 26,
+    "humidity": 32,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-17",
+    "temperature": 24,
+    "humidity": 38,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-18",
+    "temperature": 26,
+    "humidity": 37,
+    "wind_speed": 9,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-19",
+    "temperature": 23,
+    "humidity": 29,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-20",
+    "temperature": 23,
+    "humidity": 39,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-21",
+    "temperature": 25,
+    "humidity": 30,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-22",
+    "temperature": 28,
+    "humidity": 25,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-23",
+    "temperature": 29,
+    "humidity": 39,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-24",
+    "temperature": 34,
+    "humidity": 39,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-25",
+    "temperature": 33,
+    "humidity": 28,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-26",
+    "temperature": 33,
+    "humidity": 30,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-27",
+    "temperature": 20,
+    "humidity": 31,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-28",
+    "temperature": 29,
+    "humidity": 37,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-29",
+    "temperature": 22,
+    "humidity": 29,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-30",
+    "temperature": 24,
+    "humidity": 21,
+    "wind_speed": 5,
+    "weather_condition": "Rainy"
+  },
+  {
+    "month": "July",
+    "date": "2025-07-31",
+    "temperature": 34,
+    "humidity": 20,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-01",
+    "temperature": 28,
+    "humidity": 20,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-02",
+    "temperature": 26,
+    "humidity": 22,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-03",
+    "temperature": 29,
+    "humidity": 23,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-04",
+    "temperature": 21,
+    "humidity": 20,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-05",
+    "temperature": 32,
+    "humidity": 22,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-06",
+    "temperature": 28,
+    "humidity": 33,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-07",
+    "temperature": 22,
+    "humidity": 33,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-08",
+    "temperature": 31,
+    "humidity": 35,
+    "wind_speed": 6,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-09",
+    "temperature": 27,
+    "humidity": 31,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-10",
+    "temperature": 27,
+    "humidity": 29,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-11",
+    "temperature": 31,
+    "humidity": 33,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-12",
+    "temperature": 32,
+    "humidity": 21,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-13",
+    "temperature": 22,
+    "humidity": 38,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-14",
+    "temperature": 23,
+    "humidity": 31,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-15",
+    "temperature": 24,
+    "humidity": 34,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-16",
+    "temperature": 28,
+    "humidity": 25,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-17",
+    "temperature": 30,
+    "humidity": 27,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-18",
+    "temperature": 25,
+    "humidity": 35,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-19",
+    "temperature": 29,
+    "humidity": 24,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-20",
+    "temperature": 22,
+    "humidity": 38,
+    "wind_speed": 5,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-21",
+    "temperature": 31,
+    "humidity": 24,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-22",
+    "temperature": 20,
+    "humidity": 27,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-23",
+    "temperature": 31,
+    "humidity": 38,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-24",
+    "temperature": 21,
+    "humidity": 21,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-25",
+    "temperature": 28,
+    "humidity": 21,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-26",
+    "temperature": 20,
+    "humidity": 25,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-27",
+    "temperature": 27,
+    "humidity": 33,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-28",
+    "temperature": 31,
+    "humidity": 39,
+    "wind_speed": 9,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-29",
+    "temperature": 21,
+    "humidity": 26,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-30",
+    "temperature": 32,
+    "humidity": 28,
+    "wind_speed": 9,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "August",
+    "date": "2025-08-31",
+    "temperature": 30,
+    "humidity": 25,
+    "wind_speed": 9,
+    "weather_condition": "Thunderstorm"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-01",
+    "temperature": 26,
+    "humidity": 37,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-02",
+    "temperature": 20,
+    "humidity": 38,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-03",
+    "temperature": 18,
+    "humidity": 26,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-04",
+    "temperature": 20,
+    "humidity": 32,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-05",
+    "temperature": 29,
+    "humidity": 32,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-06",
+    "temperature": 23,
+    "humidity": 34,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-07",
+    "temperature": 19,
+    "humidity": 40,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-08",
+    "temperature": 18,
+    "humidity": 33,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-09",
+    "temperature": 28,
+    "humidity": 42,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-10",
+    "temperature": 25,
+    "humidity": 28,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-11",
+    "temperature": 23,
+    "humidity": 34,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-12",
+    "temperature": 21,
+    "humidity": 34,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-13",
+    "temperature": 25,
+    "humidity": 36,
+    "wind_speed": 8,
+    "weather_condition": "Rainy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-14",
+    "temperature": 20,
+    "humidity": 27,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-15",
+    "temperature": 24,
+    "humidity": 43,
+    "wind_speed": 8,
+    "weather_condition": "Rainy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-16",
+    "temperature": 22,
+    "humidity": 37,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-17",
+    "temperature": 28,
+    "humidity": 41,
+    "wind_speed": 4,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-18",
+    "temperature": 18,
+    "humidity": 39,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-19",
+    "temperature": 19,
+    "humidity": 34,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-20",
+    "temperature": 25,
+    "humidity": 35,
+    "wind_speed": 7,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-21",
+    "temperature": 21,
+    "humidity": 29,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-22",
+    "temperature": 22,
+    "humidity": 44,
+    "wind_speed": 6,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-23",
+    "temperature": 19,
+    "humidity": 25,
+    "wind_speed": 8,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-24",
+    "temperature": 22,
+    "humidity": 38,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-25",
+    "temperature": 25,
+    "humidity": 30,
+    "wind_speed": 4,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-26",
+    "temperature": 29,
+    "humidity": 43,
+    "wind_speed": 6,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-27",
+    "temperature": 19,
+    "humidity": 29,
+    "wind_speed": 4,
+    "weather_condition": "Sunny"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-28",
+    "temperature": 18,
+    "humidity": 27,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-29",
+    "temperature": 28,
+    "humidity": 44,
+    "wind_speed": 5,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "September",
+    "date": "2025-09-30",
+    "temperature": 27,
+    "humidity": 35,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-01",
+    "temperature": 9,
+    "humidity": 48,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-02",
+    "temperature": 10,
+    "humidity": 34,
+    "wind_speed": 10,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-03",
+    "temperature": 14,
+    "humidity": 48,
+    "wind_speed": 5,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-04",
+    "temperature": 6,
+    "humidity": 43,
+    "wind_speed": 5,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-05",
+    "temperature": 12,
+    "humidity": 39,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-06",
+    "temperature": 16,
+    "humidity": 40,
+    "wind_speed": 10,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-07",
+    "temperature": 11,
+    "humidity": 49,
+    "wind_speed": 6,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-08",
+    "temperature": 10,
+    "humidity": 36,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-09",
+    "temperature": 8,
+    "humidity": 44,
+    "wind_speed": 7,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-10",
+    "temperature": 11,
+    "humidity": 34,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-11",
+    "temperature": 12,
+    "humidity": 41,
+    "wind_speed": 11,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-12",
+    "temperature": 11,
+    "humidity": 40,
+    "wind_speed": 5,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-13",
+    "temperature": 9,
+    "humidity": 34,
+    "wind_speed": 9,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-14",
+    "temperature": 13,
+    "humidity": 31,
+    "wind_speed": 6,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-15",
+    "temperature": 19,
+    "humidity": 40,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-16",
+    "temperature": 7,
+    "humidity": 51,
+    "wind_speed": 10,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-17",
+    "temperature": 18,
+    "humidity": 33,
+    "wind_speed": 8,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-18",
+    "temperature": 11,
+    "humidity": 40,
+    "wind_speed": 11,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-19",
+    "temperature": 8,
+    "humidity": 33,
+    "wind_speed": 8,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-20",
+    "temperature": 19,
+    "humidity": 40,
+    "wind_speed": 8,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-21",
+    "temperature": 5,
+    "humidity": 33,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-22",
+    "temperature": 18,
+    "humidity": 31,
+    "wind_speed": 6,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-23",
+    "temperature": 15,
+    "humidity": 52,
+    "wind_speed": 5,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-24",
+    "temperature": 18,
+    "humidity": 34,
+    "wind_speed": 9,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-25",
+    "temperature": 16,
+    "humidity": 46,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-26",
+    "temperature": 5,
+    "humidity": 36,
+    "wind_speed": 7,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-27",
+    "temperature": 10,
+    "humidity": 42,
+    "wind_speed": 8,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-28",
+    "temperature": 8,
+    "humidity": 32,
+    "wind_speed": 7,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-29",
+    "temperature": 16,
+    "humidity": 33,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-30",
+    "temperature": 19,
+    "humidity": 45,
+    "wind_speed": 10,
+    "weather_condition": "Rainy"
+  },
+  {
+    "month": "October",
+    "date": "2025-10-31",
+    "temperature": 7,
+    "humidity": 31,
+    "wind_speed": 11,
+    "weather_condition": "Cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-01",
+    "temperature": 4,
+    "humidity": 45,
+    "wind_speed": 10,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-02",
+    "temperature": -4,
+    "humidity": 51,
+    "wind_speed": 9,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-03",
+    "temperature": 6,
+    "humidity": 47,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-04",
+    "temperature": 7,
+    "humidity": 58,
+    "wind_speed": 7,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-05",
+    "temperature": 2,
+    "humidity": 43,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-06",
+    "temperature": -2,
+    "humidity": 50,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-07",
+    "temperature": -1,
+    "humidity": 50,
+    "wind_speed": 11,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-08",
+    "temperature": -3,
+    "humidity": 59,
+    "wind_speed": 11,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-09",
+    "temperature": 5,
+    "humidity": 52,
+    "wind_speed": 9,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-10",
+    "temperature": 1,
+    "humidity": 44,
+    "wind_speed": 6,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-11",
+    "temperature": 0,
+    "humidity": 54,
+    "wind_speed": 10,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-12",
+    "temperature": 7,
+    "humidity": 57,
+    "wind_speed": 6,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-13",
+    "temperature": -4,
+    "humidity": 47,
+    "wind_speed": 11,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-14",
+    "temperature": 3,
+    "humidity": 59,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-15",
+    "temperature": -1,
+    "humidity": 48,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-16",
+    "temperature": -2,
+    "humidity": 44,
+    "wind_speed": 10,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-17",
+    "temperature": 6,
+    "humidity": 45,
+    "wind_speed": 9,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-18",
+    "temperature": 9,
+    "humidity": 46,
+    "wind_speed": 11,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-19",
+    "temperature": 0,
+    "humidity": 40,
+    "wind_speed": 11,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-20",
+    "temperature": 9,
+    "humidity": 45,
+    "wind_speed": 11,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-21",
+    "temperature": 0,
+    "humidity": 43,
+    "wind_speed": 10,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-22",
+    "temperature": 8,
+    "humidity": 59,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-23",
+    "temperature": 5,
+    "humidity": 50,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-24",
+    "temperature": 2,
+    "humidity": 55,
+    "wind_speed": 8,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-25",
+    "temperature": -2,
+    "humidity": 49,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-26",
+    "temperature": 6,
+    "humidity": 42,
+    "wind_speed": 11,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-27",
+    "temperature": 4,
+    "humidity": 44,
+    "wind_speed": 8,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-28",
+    "temperature": -5,
+    "humidity": 59,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-29",
+    "temperature": 0,
+    "humidity": 45,
+    "wind_speed": 6,
+    "weather_condition": "Partly cloudy"
+  },
+  {
+    "month": "November",
+    "date": "2025-11-30",
+    "temperature": 5,
+    "humidity": 45,
+    "wind_speed": 6,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-01",
+    "temperature": -3,
+    "humidity": 56,
+    "wind_speed": 10,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-02",
+    "temperature": -7,
+    "humidity": 60,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-03",
+    "temperature": -4,
+    "humidity": 61,
+    "wind_speed": 11,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-04",
+    "temperature": -6,
+    "humidity": 59,
+    "wind_speed": 10,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-05",
+    "temperature": 1,
+    "humidity": 58,
+    "wind_speed": 9,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-06",
+    "temperature": 1,
+    "humidity": 63,
+    "wind_speed": 9,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-07",
+    "temperature": -10,
+    "humidity": 63,
+    "wind_speed": 12,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-08",
+    "temperature": -8,
+    "humidity": 46,
+    "wind_speed": 13,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-09",
+    "temperature": -2,
+    "humidity": 55,
+    "wind_speed": 11,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-10",
+    "temperature": -8,
+    "humidity": 51,
+    "wind_speed": 12,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-11",
+    "temperature": 1,
+    "humidity": 63,
+    "wind_speed": 11,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-12",
+    "temperature": -3,
+    "humidity": 58,
+    "wind_speed": 14,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-13",
+    "temperature": -4,
+    "humidity": 55,
+    "wind_speed": 9,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-14",
+    "temperature": -7,
+    "humidity": 64,
+    "wind_speed": 8,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-15",
+    "temperature": 0,
+    "humidity": 50,
+    "wind_speed": 10,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-16",
+    "temperature": -1,
+    "humidity": 46,
+    "wind_speed": 11,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-17",
+    "temperature": -7,
+    "humidity": 54,
+    "wind_speed": 13,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-18",
+    "temperature": 1,
+    "humidity": 60,
+    "wind_speed": 13,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-19",
+    "temperature": 3,
+    "humidity": 58,
+    "wind_speed": 14,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-20",
+    "temperature": -5,
+    "humidity": 57,
+    "wind_speed": 14,
+    "weather_condition": "Foggy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-21",
+    "temperature": 2,
+    "humidity": 47,
+    "wind_speed": 10,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-22",
+    "temperature": -10,
+    "humidity": 62,
+    "wind_speed": 13,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-23",
+    "temperature": -5,
+    "humidity": 61,
+    "wind_speed": 11,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-24",
+    "temperature": 1,
+    "humidity": 62,
+    "wind_speed": 12,
+    "weather_condition": "Sleet"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-25",
+    "temperature": -5,
+    "humidity": 62,
+    "wind_speed": 9,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-26",
+    "temperature": -6,
+    "humidity": 60,
+    "wind_speed": 9,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-27",
+    "temperature": -1,
+    "humidity": 49,
+    "wind_speed": 9,
+    "weather_condition": "Overcast"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-28",
+    "temperature": -6,
+    "humidity": 57,
+    "wind_speed": 12,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-29",
+    "temperature": 2,
+    "humidity": 52,
+    "wind_speed": 9,
+    "weather_condition": "Snowy"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-30",
+    "temperature": -5,
+    "humidity": 61,
+    "wind_speed": 13,
+    "weather_condition": "Blizzard"
+  },
+  {
+    "month": "December",
+    "date": "2025-12-31",
+    "temperature": 0,
+    "humidity": 56,
+    "wind_speed": 11,
+    "weather_condition": "Foggy"
+  }]
+}
