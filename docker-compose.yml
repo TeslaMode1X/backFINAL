@@ -15,7 +15,7 @@ services:
       interval: 5s
       retries: 5
       timeout: 3s
-  # mongodb
+  # MONGODB
   mongo:
     container_name: web_prog_2_db_mongo
     image: mongo:6
@@ -38,9 +38,7 @@ services:
       interval: 10s
       retries: 5
       timeout: 5s
-
-
-  # mongo migration script
+  # MONGODB MIGRATION 
   migrate-mongo:
     build:
       context: ./server/db
@@ -54,8 +52,7 @@ services:
       - ./server/db/mongo_migrations:/migrations
     networks:
       - web_prog_net
-
-  # migrations for postgres
+  # POSTGRES MIGRATION
   flyway:
     image: flyway/flyway
     container_name: web_prog_2_db_flyway_migrations
