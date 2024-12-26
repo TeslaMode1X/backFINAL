@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y wget gnupg && \
 
 WORKDIR /app
 
-# scipt for collections data
-COPY mongo_migrations /migrations
 # scipt for inserting data
 COPY run-migrations.js /app/run-migrations.js
 
