@@ -29,8 +29,8 @@ services:
     ports:
       - ${MONGO_PORT}:27017
     volumes:
-      - mongo_data:/data/db
-      - ./server/db/mongo_migrations:/migrations
+      - mongodb_data:/data/db
+      - ./server/db/mongo_migrations:/docker-entrypoint-initdb.d/migrations
     networks:
       - web_prog_net
     healthcheck:
@@ -89,4 +89,4 @@ networks:
     driver: bridge
     
 volumes:
-  mongo_data:
+  mongodb_data:
