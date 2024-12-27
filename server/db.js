@@ -2,6 +2,7 @@ require('dotenv').config({ path: '../.env' });
 
 const { Pool } = require('pg');
 
+// Creating connection to postgres container via .env variables
 const pool = new Pool({
   user: process.env.POSTGRES_USER,
   host: process.env.POSTGRES_HOST,
@@ -23,4 +24,5 @@ pool.connect()
     console.error('Failed to connect to the database:', err.message);
   });
 
+// returning postgres connection for querying
 module.exports = pool;
