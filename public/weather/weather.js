@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const humidity = document.getElementById('humidity');
     const windSpeed = document.getElementById('windSpeed');
 
-    // Функция для получения данных о погоде
     const fetchWeatherData = async (city) => {
         try {
             const response = await fetch(`/api/v1/weather/${city}`);
@@ -19,16 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Функция для обновления информации о погоде на странице
     const updateWeatherInfo = async (city) => {
         const data = await fetchWeatherData(city);
         if (data) {
             cityName.textContent = city.charAt(0).toUpperCase() + city.slice(1);
-            currentDate.textContent = data.date;
-            temperature.textContent = `${data.temperature}°C`;
-            description.textContent = data.weather_condition;
-            humidity.textContent = data.humidity;
-            windSpeed.textContent = `${data.wind_speed} km/h`;
+            currentDate.textContent = data[0].date;
+            temperature.textContent = `${data[0].temperature}°C`;
+            description.textContent = data[0].weather_condition;
+            humidity.textContent = data[0].humidity;
+            windSpeed.textContent = `${data[0].wind_speed}`;
         } else {
             cityName.textContent = '-';
             currentDate.textContent = '-';

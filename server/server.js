@@ -140,14 +140,25 @@ app.delete('/api/v1/users/:id', async (req, res) => {
 app.get('/api/v1/weather/:city', async (req, res) => {
     const { city } = req.params;
     try {
+        currentDate = new Date()
+        const year = currentDate.getFullYear() + 1;
+        const month = currentDate.getMonth() + 1;  
+        const day = currentDate.getDate();  
+        
+        const newStr = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+
+        console.log(newStr);
+
         const cityCollection = mongoose.connection.db.collection(city.toLowerCase());
 
-        const weatherData = await cityCollection.findOne();
+        const weatherData = await cityCollection.find(
+            { date: newStr }
+        ).limit(1).toArray(); 
 
         if (weatherData.length === 0) {
-            console.log('No weather data found for' + city);
+            console.log('No weather data found for ' + city);
         } else {
-            console.log('Weather data from MongoDB ' + '(' + city + ')' + ':');
+            console.log('Weather data from MongoDB (' + city + '):');
             console.log(weatherData);
         }
 
@@ -157,6 +168,7 @@ app.get('/api/v1/weather/:city', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
+
 
 
 (async () => {
