@@ -7,16 +7,7 @@ const port = process.env.SERVER_PORT || 3000;
 
 const mongoose = require('./mongo')
 
-const cityCollectionName = 'almaty';
-
-const weatherSchema = new mongoose.Schema({
-    month: String,
-    date: String,
-    temperature: Number,
-    humidity: Number,
-    wind_speed: Number,
-    weather_condition: String
-});
+// const cityCollectionName = 'almaty';
 
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
@@ -149,13 +140,15 @@ app.delete('/api/v1/users/:id', async (req, res) => {
 app.get('/api/v1/weather/:city', async (req, res) => {
     const { city } = req.params;
     try {
-        const db = require('./mongo').getDb();
-        const collection = db.collection(city.toLowerCase()); 
+        const cityCollection = mongoose.connection.db.collection(city.toLowerCase());
 
-        const weatherData = await collection.find().toArray();
+        const weatherData = await cityCollection.findOne();
 
         if (weatherData.length === 0) {
-            return res.status(404).json({ error: `No weather data found for city: ${city}` });
+            console.log('No weather data found for' + city);
+        } else {
+            console.log('Weather data from MongoDB ' + '(' + city + ')' + ':');
+            console.log(weatherData);
         }
 
         res.json(weatherData);
@@ -168,19 +161,8 @@ app.get('/api/v1/weather/:city', async (req, res) => {
 
 (async () => {
     try {
-        await pool.query('SELECT NOW()'); // Проверяем подключение к PostgreSQL
+        await pool.query('SELECT NOW()'); 
         console.log('Connected to PostgreSQL database successfully');
-
-        const almatyCollection = mongoose.connection.db.collection(cityCollectionName);
-
-        const weatherData = await almatyCollection.findOne();
-
-        if (weatherData.length === 0) {
-            console.log('No weather data found for Almaty');
-        } else {
-            console.log('Weather data from MongoDB (Almaty):');
-            console.log(weatherData);
-        }
     
         app.listen(port, () => {
             console.log(`Server running at http://localhost:${port}`);
@@ -190,3 +172,4 @@ app.get('/api/v1/weather/:city', async (req, res) => {
         process.exit(1);
     }
 })();
+
