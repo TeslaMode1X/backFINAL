@@ -18,7 +18,7 @@ const pool = new Pool({
 // console.log(pool.pool)
 
 pool.connect()
-  .then(() => console.log('Connected to the database'))
+  .then(() => console.log('Connected to the Postgres db'))
   .catch((err) => {
     console.error('Failed to connect to the database:', err.message);
   });

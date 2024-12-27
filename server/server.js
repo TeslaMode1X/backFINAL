@@ -5,13 +5,32 @@ const pool = require('./db');
 const app = express();
 const port = process.env.SERVER_PORT || 3000; 
 
+const mongoose = require('./mongo')
+
+const cityCollectionName = 'almaty';
+
+const weatherSchema = new mongoose.Schema({
+    month: String,
+    date: String,
+    temperature: Number,
+    humidity: Number,
+    wind_speed: Number,
+    weather_condition: String
+});
+
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '../public')));
 
+// Main Page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
+});
+
+// Weather Page
+app.get('/weather', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/weather', 'weather.html'));
 });
 
 app.get('/login', (req, res) => {
@@ -127,16 +146,47 @@ app.delete('/api/v1/users/:id', async (req, res) => {
     }
 });
 
+app.get('/api/v1/weather/:city', async (req, res) => {
+    const { city } = req.params;
+    try {
+        const db = require('./mongo').getDb();
+        const collection = db.collection(city.toLowerCase()); 
+
+        const weatherData = await collection.find().toArray();
+
+        if (weatherData.length === 0) {
+            return res.status(404).json({ error: `No weather data found for city: ${city}` });
+        }
+
+        res.json(weatherData);
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
 (async () => {
     try {
-        await pool.query('SELECT NOW()');
-        console.log('Connected to the database successfully');
+        await pool.query('SELECT NOW()'); // Проверяем подключение к PostgreSQL
+        console.log('Connected to PostgreSQL database successfully');
 
+        const almatyCollection = mongoose.connection.db.collection(cityCollectionName);
+
+        const weatherData = await almatyCollection.findOne();
+
+        if (weatherData.length === 0) {
+            console.log('No weather data found for Almaty');
+        } else {
+            console.log('Weather data from MongoDB (Almaty):');
+            console.log(weatherData);
+        }
+    
         app.listen(port, () => {
             console.log(`Server running at http://localhost:${port}`);
         });
     } catch (error) {
         console.error('Failed to connect to the database:', error.message);
-        process.exit(1); 
+        process.exit(1);
     }
 })();

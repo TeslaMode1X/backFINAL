@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in Your City</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <h1>Select a City to View Weather</h1>
+    <select id="citySelector">
+        <option value="astana">Astana</option>
+        <option value="almaty">Almaty</option>
+        <option value="shymkent">Shymkent</option>
+        <option value="semey">Semey</option>
+        <option value="atyrau">Atyrau</option>
+    </select>
+    <a href="/" class="back-link">Back to Home</a>
+
+    <div class="weather-card" id="weatherCard">
+        <div class="temperature" id="temperature">-</div>
+        <div class="description" id="description">-</div>
+        <div class="details">
+            <p><strong>City:</strong> <span id="cityName">-</span></p>
+            <p><strong>Date:</strong> <span id="currentDate">-</span></p>
+            <p><strong>Humidity:</strong> <span id="humidity">-</span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="windSpeed">-</span> km/h</p>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+</body>
+</html>
