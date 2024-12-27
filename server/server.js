@@ -54,6 +54,14 @@ app.get('/weather', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/weather', 'weather.html'));
 });
 
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public', 'signup.html'));
+});
+
+app.get('/signin', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public', 'signin.html'));
+});
+
 /**
  * @swagger
  * /login:
@@ -104,8 +112,35 @@ app.get('/weather', (req, res) => {
  *                   type: string
  *                   example: "Server error"
  */
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'signup.html'));
+app.post('/login', async (req, res) => {
+    const { email, password } = req.body; 
+
+    if (!email || !password) {
+        return res.status(400).send('Missing email or password');
+    }
+
+    try {
+        const result = await pool.query(
+            'SELECT * FROM users WHERE email = $1',
+            [email]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(400).send('Invalid credentials(email)');
+        }
+
+        const user = result.rows[0];
+        const isValidPassword = await bcrypt.compare(password, user.password); // Проверка хеша пароля
+
+        if (!isValidPassword) {
+            return res.status(400).send('Invalid credentials(password)');
+        }
+
+        res.send('Login successful');
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send('Server error');
+    }
 });
 
 /**
@@ -161,42 +196,6 @@ app.get('/login', (req, res) => {
  *                   type: string
  *                   example: "Server error"
  */
-app.get('/signin', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'signin.html'));
-});
-
-// adding new user for postgres db
-app.post('/login', async (req, res) => {
-    const { email, password } = req.body; 
-
-    if (!email || !password) {
-        return res.status(400).send('Missing email or password');
-    }
-
-    try {
-        const result = await pool.query(
-            'SELECT * FROM users WHERE email = $1',
-            [email]
-        );
-
-        if (result.rows.length === 0) {
-            return res.status(400).send('Invalid credentials(email)');
-        }
-
-        const user = result.rows[0];
-        const isValidPassword = await bcrypt.compare(password, user.password); // Проверка хеша пароля
-
-        if (!isValidPassword) {
-            return res.status(400).send('Invalid credentials(password)');
-        }
-
-        res.send('Login successful');
-    } catch (error) {
-        console.error(error.message);
-        res.status(500).send('Server error');
-    }
-});
-
 app.post('/signin', async (req, res) => {
     const { email, name, password } = req.body;
 
