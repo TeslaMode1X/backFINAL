@@ -137,14 +137,14 @@ app.delete('/api/v1/users/:id', async (req, res) => {
     }
 });
 
-app.get('/api/v1/weather/:city', async (req, res) => {
+app.get('/api/v1/today/weather/:city', async (req, res) => {
     const { city } = req.params;
     try {
         currentDate = new Date()
         const year = currentDate.getFullYear() + 1;
         const month = currentDate.getMonth() + 1;  
         const day = currentDate.getDate();  
-        
+
         const newStr = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
 
         console.log(newStr);
@@ -169,6 +169,47 @@ app.get('/api/v1/weather/:city', async (req, res) => {
     }
 });
 
+app.get('/api/v1/week/weather/:city', async (req, res) => {
+    const { city } = req.params;
+    try {
+        const currentDate = new Date();
+        const dates = [];
+
+        for (let i = 0; i < 7; i++) {
+            const nextDate = new Date(currentDate);
+            nextDate.setDate(currentDate.getDate() + i);  
+
+            const year = nextDate.getFullYear() + 1;
+            const month = nextDate.getMonth() + 1;  
+            const day = nextDate.getDate();
+
+            const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+            dates.push(formattedDate);
+        }
+
+        console.log('Dates for the next 7 days:', dates);
+
+        const cityCollection = mongoose.connection.db.collection(city.toLowerCase());
+
+
+        const weatherData = await cityCollection.find(
+            { date: { $in: dates } }
+        ).toArray();
+
+        if (weatherData.length === 0) {
+            console.log('No weather data found for ' + city);
+        } else {
+            console.log('Weather data from MongoDB (' + city + '):');
+            console.log(weatherData);
+        }
+
+        res.json(weatherData);
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+});
 
 
 (async () => {
