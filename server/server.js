@@ -11,6 +11,9 @@ const mongoose = require('./mongo')
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
+// logger 
+const logger = require('./logger/winston')
+
 const app = express();
 const port = process.env.SERVER_PORT || 3000; 
 
@@ -42,6 +45,11 @@ const swaggerOptions = {
 
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+app.use((req, res, next) => {
+    logger.info(`Request: ${req.method} ${req.originalUrl}`);
+    next();
+});
   
 
 // Main Page
@@ -116,6 +124,7 @@ app.post('/login', async (req, res) => {
     const { email, password } = req.body; 
 
     if (!email || !password) {
+        logger.warn('Missing email or password');
         return res.status(400).send('Missing email or password');
     }
 
@@ -126,6 +135,7 @@ app.post('/login', async (req, res) => {
         );
 
         if (result.rows.length === 0) {
+            logger.warn('Invalid credentials (email)');
             return res.status(400).send('Invalid credentials(email)');
         }
 
@@ -133,12 +143,14 @@ app.post('/login', async (req, res) => {
         const isValidPassword = await bcrypt.compare(password, user.password); // Проверка хеша пароля
 
         if (!isValidPassword) {
+            logger.warn('Invalid credentials (password)');
             return res.status(400).send('Invalid credentials(password)');
         }
 
+        logger.info(`Login successful for user: ${email}`);
         res.send('Login successful');
     } catch (error) {
-        console.error(error.message);
+        logger.error(error.message);
         res.status(500).send('Server error');
     }
 });
@@ -200,19 +212,21 @@ app.post('/signin', async (req, res) => {
     const { email, name, password } = req.body;
 
     if (!email || !name || !password) {
+        logger.warn('Missing email, name, or password in request body');
         return res.status(400).send('Missing email, name, or password');
     }
 
     try {
-        const hashedPassword = await bcrypt.hash(password, 10); 
+        const hashedPassword = await bcrypt.hash(password, 10);
         await pool.query(
             'INSERT INTO users (email, name, password) VALUES ($1, $2, $3)',
             [email, name, hashedPassword]
         );
+        logger.info(`User signed up: email=${email}`);
         res.send('Sign In successful');
     } catch (error) {
-        console.error(error.message);
-        if (error.code === '23505') { 
+        logger.error(`Error during sign up: ${error.message}`);
+        if (error.code === '23505') {
             return res.status(400).send('Email already exists');
         }
         res.status(500).send('Server error');
@@ -260,9 +274,10 @@ app.post('/signin', async (req, res) => {
 app.get('/api/v1/users', async (req, res) => {
     try {
         const result = await pool.query('SELECT id, email, name, password FROM users');
+        logger.info('Fetched all users');
         res.json(result.rows);
     } catch (error) {
-        console.error(error.message);
+        logger.error(`Error fetching users: ${error.message}`);
         res.status(500).send('Server error');
     }
 });
@@ -346,12 +361,14 @@ app.put('/api/v1/users/:id', async (req, res) => {
         );
 
         if (result.rows.length === 0) {
+            logger.warn(`User not found: id=${id}`);
             return res.status(404).send('User not found');
         }
 
+        logger.info(`User updated: id=${id}`);
         res.send('User updated successfully');
     } catch (error) {
-        console.error(error.message);
+        logger.error(`Error updating user: ${error.message}`);
         res.status(500).send('Server error');
     }
 });
@@ -411,12 +428,14 @@ app.delete('/api/v1/users/:id', async (req, res) => {
         );
 
         if (result.rows.length === 0) {
+            logger.warn(`User not found for deletion: id=${id}`);
             return res.status(404).send('User not found');
         }
 
+        logger.info(`User deleted: id=${id}`);
         res.send('User deleted successfully');
     } catch (error) {
-        console.error(error.message);
+        logger.error(`Error deleting user: ${error.message}`);
         res.status(500).send('Server error');
     }
 });
@@ -470,31 +489,29 @@ app.delete('/api/v1/users/:id', async (req, res) => {
 app.get('/api/v1/today/weather/:city', async (req, res) => {
     const { city } = req.params;
     try {
-        currentDate = new Date()
+        const currentDate = new Date();
         const year = currentDate.getFullYear() + 1;
-        const month = currentDate.getMonth() + 1;  
-        const day = currentDate.getDate();  
+        const month = currentDate.getMonth() + 1;
+        const day = currentDate.getDate();
 
         const newStr = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
-
-        console.log(newStr);
+        logger.info(`Fetching today's weather for city=${city}, date=${newStr}`);
 
         const cityCollection = mongoose.connection.db.collection(city.toLowerCase());
 
         const weatherData = await cityCollection.find(
             { date: newStr }
-        ).limit(1).toArray(); 
+        ).limit(1).toArray();
 
         if (weatherData.length === 0) {
-            console.log('No weather data found for ' + city);
+            logger.warn(`No weather data found for city=${city}`);
         } else {
-            console.log('Weather data from MongoDB (' + city + '):');
-            console.log(weatherData);
+            logger.info(`Weather data fetched for city=${city}`);
         }
 
         res.json(weatherData);
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        logger.error(`Error fetching today's weather: ${error.message}`);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
@@ -573,51 +590,49 @@ app.get('/api/v1/week/weather/:city', async (req, res) => {
 
         for (let i = 0; i < 7; i++) {
             const nextDate = new Date(currentDate);
-            nextDate.setDate(currentDate.getDate() + i);  
+            nextDate.setDate(currentDate.getDate() + i);
 
             const year = nextDate.getFullYear() + 1;
-            const month = nextDate.getMonth() + 1;  
+            const month = nextDate.getMonth() + 1;
             const day = nextDate.getDate();
 
             const formattedDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
             dates.push(formattedDate);
         }
 
-        console.log('Dates for the next 7 days:', dates);
+        logger.info(`Fetching weekly weather for city=${city}, dates=${dates.join(', ')}`);
 
         const cityCollection = mongoose.connection.db.collection(city.toLowerCase());
-
 
         const weatherData = await cityCollection.find(
             { date: { $in: dates } }
         ).toArray();
 
         if (weatherData.length === 0) {
-            console.log('No weather data found for ' + city);
+            logger.warn(`No weekly weather data found for city=${city}`);
         } else {
-            console.log('Weather data from MongoDB (' + city + '):');
-            console.log(weatherData);
+            logger.info(`Weekly weather data fetched for city=${city}`);
         }
 
         res.json(weatherData);
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        logger.error(`Error fetching weekly weather: ${error.message}`);
         res.status(500).json({ error: 'Internal Server Error' });
     }
-
 });
 
 // connection to databases and server starting
 (async () => {
     try {
         await pool.query('SELECT NOW()'); 
-        console.log('Connected to PostgreSQL database successfully');
+        logger.info('Connected to PostgreSQL database successfully');
+        
     
         app.listen(port, () => {
-            console.log(`Server running at http://localhost:${port}`);
+            logger.info(`Server running at http://localhost:${port}`);
         });
     } catch (error) {
-        console.error('Failed to connect to the database:', error.message);
+        logger.error('Failed to connect to the database:', error.message);
         process.exit(1);
     }
 })();

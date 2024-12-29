@@ -1,0 +1,61 @@
+2024-12-29T03:05:22.088Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2024-12-29T03:05:22.092Z [[32minfo[39m]: Server running at http://localhost:3000
+2024-12-29T03:09:47.290Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2024-12-29T03:09:47.294Z [[32minfo[39m]: Server running at http://localhost:3000
+2024-12-29T03:09:53.793Z [[32minfo[39m]: Request: GET /favicon.ico
+2024-12-29T03:09:55.463Z [[32minfo[39m]: Request: GET /signin
+2024-12-29T03:10:03.189Z [[32minfo[39m]: Request: GET /login
+2024-12-29T03:10:08.985Z [[32minfo[39m]: Request: POST /signin
+2024-12-29T03:10:09.045Z [[32minfo[39m]: User signed up: email=a@mail.ru
+2024-12-29T03:10:20.120Z [[32minfo[39m]: Request: GET /signin
+2024-12-29T03:10:23.596Z [[32minfo[39m]: Request: POST /login
+2024-12-29T03:10:23.656Z [[33mwarn[39m]: Invalid credentials (password)
+2024-12-29T03:10:29.584Z [[32minfo[39m]: Request: POST /login
+2024-12-29T03:10:29.632Z [[32minfo[39m]: Login successful for user: a@mail.ru
+2024-12-29T03:10:35.111Z [[32minfo[39m]: Request: POST /login
+2024-12-29T03:10:35.113Z [[33mwarn[39m]: Invalid credentials (email)
+2024-12-29T03:10:39.799Z [[32minfo[39m]: Request: GET /weather/
+2024-12-29T03:10:39.837Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2024-12-29T03:10:39.837Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
+2024-12-29T03:10:39.841Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2024-12-29T03:10:39.841Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:10:39.847Z [[32minfo[39m]: Weather data fetched for city=astana
+2024-12-29T03:10:39.851Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2024-12-29T03:10:43.076Z [[32minfo[39m]: Request: GET /api/v1/today/weather/shymkent
+2024-12-29T03:10:43.077Z [[32minfo[39m]: Fetching today's weather for city=shymkent, date=2025-12-29
+2024-12-29T03:10:43.078Z [[32minfo[39m]: Request: GET /api/v1/week/weather/shymkent
+2024-12-29T03:10:43.078Z [[32minfo[39m]: Fetching weekly weather for city=shymkent, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:10:43.081Z [[32minfo[39m]: Weather data fetched for city=shymkent
+2024-12-29T03:10:43.082Z [[32minfo[39m]: Weekly weather data fetched for city=shymkent
+2024-12-29T03:10:47.906Z [[32minfo[39m]: Request: GET /api/v1/today/weather/atyrau
+2024-12-29T03:10:47.906Z [[32minfo[39m]: Fetching today's weather for city=atyrau, date=2025-12-29
+2024-12-29T03:10:47.912Z [[32minfo[39m]: Request: GET /api/v1/week/weather/atyrau
+2024-12-29T03:10:47.913Z [[32minfo[39m]: Fetching weekly weather for city=atyrau, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:10:47.914Z [[32minfo[39m]: Weather data fetched for city=atyrau
+2024-12-29T03:10:47.917Z [[32minfo[39m]: Weekly weather data fetched for city=atyrau
+2024-12-29T03:10:50.016Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2024-12-29T03:10:50.016Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
+2024-12-29T03:10:50.017Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2024-12-29T03:10:50.017Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:10:50.018Z [[32minfo[39m]: Weather data fetched for city=astana
+2024-12-29T03:10:50.020Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2024-12-29T03:11:02.386Z [[32minfo[39m]: Request: GET /api/v1/week/weather/almaty
+2024-12-29T03:11:02.386Z [[32minfo[39m]: Fetching weekly weather for city=almaty, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:11:02.399Z [[32minfo[39m]: Weekly weather data fetched for city=almaty
+2024-12-29T03:11:09.549Z [[32minfo[39m]: Request: GET /api/v1/users
+2024-12-29T03:11:09.560Z [[32minfo[39m]: Fetched all users
+2024-12-29T03:11:22.304Z [[32minfo[39m]: Request: GET /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
+2024-12-29T03:12:13.633Z [[32minfo[39m]: Request: PUT /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
+2024-12-29T03:12:13.653Z [[32minfo[39m]: User updated: id=304935be-3c5f-456b-8db3-18101cee79e9
+2024-12-29T03:12:21.378Z [[32minfo[39m]: Request: GET /api/v1/users
+2024-12-29T03:12:21.379Z [[32minfo[39m]: Fetched all users
+2024-12-29T03:12:35.245Z [[32minfo[39m]: Request: DELETE /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
+2024-12-29T03:12:35.264Z [[32minfo[39m]: User deleted: id=304935be-3c5f-456b-8db3-18101cee79e9
+2024-12-29T03:12:41.800Z [[32minfo[39m]: Request: GET /api/v1/users
+2024-12-29T03:12:41.802Z [[32minfo[39m]: Fetched all users
+2024-12-29T03:12:56.115Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2024-12-29T03:12:56.115Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
+2024-12-29T03:12:56.118Z [[32minfo[39m]: Weather data fetched for city=astana
+2024-12-29T03:13:02.052Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2024-12-29T03:13:02.052Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
+2024-12-29T03:13:02.054Z [[32minfo[39m]: Weekly weather data fetched for city=astana
