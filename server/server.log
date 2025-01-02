@@ -1,61 +1,267 @@
-2024-12-29T03:05:22.088Z [[32minfo[39m]: Connected to PostgreSQL database successfully
-2024-12-29T03:05:22.092Z [[32minfo[39m]: Server running at http://localhost:3000
-2024-12-29T03:09:47.290Z [[32minfo[39m]: Connected to PostgreSQL database successfully
-2024-12-29T03:09:47.294Z [[32minfo[39m]: Server running at http://localhost:3000
-2024-12-29T03:09:53.793Z [[32minfo[39m]: Request: GET /favicon.ico
-2024-12-29T03:09:55.463Z [[32minfo[39m]: Request: GET /signin
-2024-12-29T03:10:03.189Z [[32minfo[39m]: Request: GET /login
-2024-12-29T03:10:08.985Z [[32minfo[39m]: Request: POST /signin
-2024-12-29T03:10:09.045Z [[32minfo[39m]: User signed up: email=a@mail.ru
-2024-12-29T03:10:20.120Z [[32minfo[39m]: Request: GET /signin
-2024-12-29T03:10:23.596Z [[32minfo[39m]: Request: POST /login
-2024-12-29T03:10:23.656Z [[33mwarn[39m]: Invalid credentials (password)
-2024-12-29T03:10:29.584Z [[32minfo[39m]: Request: POST /login
-2024-12-29T03:10:29.632Z [[32minfo[39m]: Login successful for user: a@mail.ru
-2024-12-29T03:10:35.111Z [[32minfo[39m]: Request: POST /login
-2024-12-29T03:10:35.113Z [[33mwarn[39m]: Invalid credentials (email)
-2024-12-29T03:10:39.799Z [[32minfo[39m]: Request: GET /weather/
-2024-12-29T03:10:39.837Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
-2024-12-29T03:10:39.837Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
-2024-12-29T03:10:39.841Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
-2024-12-29T03:10:39.841Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:10:39.847Z [[32minfo[39m]: Weather data fetched for city=astana
-2024-12-29T03:10:39.851Z [[32minfo[39m]: Weekly weather data fetched for city=astana
-2024-12-29T03:10:43.076Z [[32minfo[39m]: Request: GET /api/v1/today/weather/shymkent
-2024-12-29T03:10:43.077Z [[32minfo[39m]: Fetching today's weather for city=shymkent, date=2025-12-29
-2024-12-29T03:10:43.078Z [[32minfo[39m]: Request: GET /api/v1/week/weather/shymkent
-2024-12-29T03:10:43.078Z [[32minfo[39m]: Fetching weekly weather for city=shymkent, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:10:43.081Z [[32minfo[39m]: Weather data fetched for city=shymkent
-2024-12-29T03:10:43.082Z [[32minfo[39m]: Weekly weather data fetched for city=shymkent
-2024-12-29T03:10:47.906Z [[32minfo[39m]: Request: GET /api/v1/today/weather/atyrau
-2024-12-29T03:10:47.906Z [[32minfo[39m]: Fetching today's weather for city=atyrau, date=2025-12-29
-2024-12-29T03:10:47.912Z [[32minfo[39m]: Request: GET /api/v1/week/weather/atyrau
-2024-12-29T03:10:47.913Z [[32minfo[39m]: Fetching weekly weather for city=atyrau, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:10:47.914Z [[32minfo[39m]: Weather data fetched for city=atyrau
-2024-12-29T03:10:47.917Z [[32minfo[39m]: Weekly weather data fetched for city=atyrau
-2024-12-29T03:10:50.016Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
-2024-12-29T03:10:50.016Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
-2024-12-29T03:10:50.017Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
-2024-12-29T03:10:50.017Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:10:50.018Z [[32minfo[39m]: Weather data fetched for city=astana
-2024-12-29T03:10:50.020Z [[32minfo[39m]: Weekly weather data fetched for city=astana
-2024-12-29T03:11:02.386Z [[32minfo[39m]: Request: GET /api/v1/week/weather/almaty
-2024-12-29T03:11:02.386Z [[32minfo[39m]: Fetching weekly weather for city=almaty, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:11:02.399Z [[32minfo[39m]: Weekly weather data fetched for city=almaty
-2024-12-29T03:11:09.549Z [[32minfo[39m]: Request: GET /api/v1/users
-2024-12-29T03:11:09.560Z [[32minfo[39m]: Fetched all users
-2024-12-29T03:11:22.304Z [[32minfo[39m]: Request: GET /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
-2024-12-29T03:12:13.633Z [[32minfo[39m]: Request: PUT /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
-2024-12-29T03:12:13.653Z [[32minfo[39m]: User updated: id=304935be-3c5f-456b-8db3-18101cee79e9
-2024-12-29T03:12:21.378Z [[32minfo[39m]: Request: GET /api/v1/users
-2024-12-29T03:12:21.379Z [[32minfo[39m]: Fetched all users
-2024-12-29T03:12:35.245Z [[32minfo[39m]: Request: DELETE /api/v1/users/304935be-3c5f-456b-8db3-18101cee79e9
-2024-12-29T03:12:35.264Z [[32minfo[39m]: User deleted: id=304935be-3c5f-456b-8db3-18101cee79e9
-2024-12-29T03:12:41.800Z [[32minfo[39m]: Request: GET /api/v1/users
-2024-12-29T03:12:41.802Z [[32minfo[39m]: Fetched all users
-2024-12-29T03:12:56.115Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
-2024-12-29T03:12:56.115Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-12-29
-2024-12-29T03:12:56.118Z [[32minfo[39m]: Weather data fetched for city=astana
-2024-12-29T03:13:02.052Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
-2024-12-29T03:13:02.052Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-12-29, 2025-12-30, 2025-12-31, 2026-01-01, 2026-01-02, 2026-01-03, 2026-01-04
-2024-12-29T03:13:02.054Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:25:47.797Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:25:47.806Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:26:03.441Z [[32minfo[39m]: Request: POST /signin
+2025-01-02T03:27:00.470Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:27:00.479Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:27:01.304Z [[32minfo[39m]: Request: POST /signin
+2025-01-02T03:27:03.208Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:27:06.875Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:27:18.267Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:27:18.389Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:28:17.897Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:28:17.907Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:28:19.590Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:28:19.694Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:28:26.924Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:28:33.794Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:28:33.913Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:28:50.532Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:28:50.646Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:29:49.707Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:29:49.715Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:29:50.315Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:29:50.418Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:29:51.812Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:29:54.244Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:29:54.359Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:29:59.437Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:29:59.561Z [[32minfo[39m]: User signed up: email=123@mail.ruy
+2025-01-02T03:30:02.106Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:30:38.623Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=213
+2025-01-02T03:30:45.269Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:30:54.395Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:30:56.199Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:31:29.921Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:31:32.222Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:31:38.588Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:31:43.279Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:33:08.806Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:34:23.520Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:34:23.528Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:34:24.042Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:34:26.709Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:34:30.817Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:34:34.946Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:34:35.070Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:34:36.266Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:34:36.493Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:34:36.495Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:34:36.504Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:34:36.505Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:34:36.511Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:34:36.527Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:34:45.930Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:34:45.939Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:34:50.777Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:34:58.304Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:35:03.024Z [[32minfo[39m]: Request: GET /signin?email=123%40mail.ru&password=123
+2025-01-02T03:36:31.160Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:36:31.168Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:36:36.181Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:36:40.570Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:36:40.677Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:36:41.713Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:36:41.804Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:36:41.805Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:36:41.814Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:36:41.815Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:36:41.822Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:36:41.839Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:36:44.451Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:36:50.941Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T03:36:51.042Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T03:37:49.420Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:37:49.532Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:37:49.532Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:37:49.534Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:37:49.535Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:37:49.538Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:37:49.540Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:38:00.073Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:43:16.392Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:43:20.249Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:43:20.365Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:43:21.543Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:43:22.006Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:43:22.006Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:43:22.008Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:43:22.009Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:43:22.010Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:43:22.013Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:43:53.490Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:43:53.499Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:44:01.688Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:44:07.698Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:44:07.830Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:44:08.859Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:44:08.953Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:44:08.954Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:44:08.964Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:44:08.965Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:44:08.971Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:44:08.989Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:44:11.632Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:44:14.429Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:44:53.187Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:44:53.196Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:44:57.961Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:45:01.703Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:45:01.809Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:45:02.869Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:45:03.083Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:45:03.085Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:45:03.094Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:45:03.096Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:45:03.104Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:45:03.119Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:45:22.087Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:45:22.097Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:46:00.166Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:46:00.175Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:46:13.036Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:46:17.136Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:46:17.265Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:46:18.371Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:46:18.556Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:46:18.558Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:46:18.566Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:46:18.568Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:46:18.575Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:46:18.590Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:46:57.139Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:46:57.148Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:47:45.503Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:47:45.512Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:47:57.990Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:50:55.726Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:50:55.735Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:51:02.990Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:51:53.473Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:51:53.481Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:52:20.716Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:52:20.724Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:55:45.589Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:55:45.597Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:55:46.811Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:55:51.145Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:55:51.576Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:55:51.578Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:55:51.591Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:55:51.592Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:55:51.599Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:55:51.616Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:55:52.915Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:55:53.927Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T03:56:02.277Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:56:02.739Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:56:19.220Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:56:19.889Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:08.817Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T03:57:08.825Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T03:57:10.191Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:11.277Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:57:13.610Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:39.688Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:40.135Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:40.602Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:41.053Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:43.820Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:57:44.973Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:46.189Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:47.046Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T03:57:47.956Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:57:48.907Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:57:49.804Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:59:09.748Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T03:59:13.043Z [[32minfo[39m]: Request: POST /login
+2025-01-02T03:59:13.170Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T03:59:14.236Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:59:14.336Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:59:14.337Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:59:14.345Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:59:14.346Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:59:14.353Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:59:14.368Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:59:16.091Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:59:17.282Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T03:59:17.372Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T03:59:17.373Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T03:59:17.374Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T03:59:17.375Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T03:59:17.377Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T03:59:17.380Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T03:59:18.339Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T03:59:18.935Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:00:20.751Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T04:00:20.759Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T04:00:21.115Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:22.134Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:00:22.217Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:23.255Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T04:00:28.819Z [[32minfo[39m]: Request: POST /login
+2025-01-02T04:00:28.927Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T04:00:29.952Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:00:30.029Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T04:00:30.031Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T04:00:30.039Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T04:00:30.040Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T04:00:30.047Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T04:00:30.062Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T04:00:31.231Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:32.451Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:00:32.528Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:36.902Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:00:37.043Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:41.423Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:00:41.518Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:00:51.427Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:00:51.542Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:01:15.718Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T04:01:30.131Z [[32minfo[39m]: Request: GET /api/v1/users
+2025-01-02T04:01:30.153Z [[32minfo[39m]: Fetched all users
+2025-01-02T04:09:33.572Z [[31merror[39m]: Failed to connect to the database:
+2025-01-02T04:09:42.071Z [[32minfo[39m]: Connected to PostgreSQL database successfully
+2025-01-02T04:09:42.079Z [[32minfo[39m]: Server running at http://localhost:3000
+2025-01-02T04:09:50.095Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:09:50.910Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T04:09:56.196Z [[32minfo[39m]: Request: POST /login
+2025-01-02T04:09:56.332Z [[32minfo[39m]: Login successful for user: 123@mail.ru
+2025-01-02T04:09:57.365Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:09:57.478Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T04:09:57.480Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T04:09:57.490Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T04:09:57.492Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T04:09:57.507Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T04:09:57.514Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T04:09:58.607Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:09:59.485Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:09:59.580Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:10:00.411Z [[32minfo[39m]: Request: GET /registration
+2025-01-02T04:10:07.276Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T04:10:07.379Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T04:10:13.911Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T04:10:14.026Z [[31merror[39m]: Error during sign up: duplicate key value violates unique constraint "users_email_key"
+2025-01-02T04:10:16.975Z [[32minfo[39m]: Request: POST /signup
+2025-01-02T04:10:17.089Z [[32minfo[39m]: User signed up: email=123@mail.r
+2025-01-02T04:10:18.212Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:10:19.570Z [[32minfo[39m]: Request: GET /signin
+2025-01-02T04:10:24.540Z [[32minfo[39m]: Request: POST /login
+2025-01-02T04:10:24.641Z [[32minfo[39m]: Login successful for user: 123@mail.r
+2025-01-02T04:10:25.668Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:10:25.743Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T04:10:25.743Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T04:10:25.745Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T04:10:25.746Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T04:10:25.750Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T04:10:25.752Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T04:10:29.092Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:10:31.429Z [[32minfo[39m]: Request: GET /weather/
+2025-01-02T04:10:31.509Z [[32minfo[39m]: Request: GET /api/v1/today/weather/astana
+2025-01-02T04:10:31.510Z [[32minfo[39m]: Fetching today's weather for city=astana, date=2025-01-02
+2025-01-02T04:10:31.511Z [[32minfo[39m]: Request: GET /api/v1/week/weather/astana
+2025-01-02T04:10:31.512Z [[32minfo[39m]: Fetching weekly weather for city=astana, dates=2025-01-02, 2025-01-03, 2025-01-04, 2025-01-05, 2025-01-06, 2025-01-07, 2025-01-08
+2025-01-02T04:10:31.514Z [[32minfo[39m]: Weather data fetched for city=astana
+2025-01-02T04:10:31.517Z [[32minfo[39m]: Weekly weather data fetched for city=astana
+2025-01-02T04:10:32.572Z [[32minfo[39m]: Request: GET /api/auth-status
+2025-01-02T04:10:51.114Z [[32minfo[39m]: Request: GET /logout
+2025-01-02T04:10:51.194Z [[32minfo[39m]: Request: GET /api/auth-status
