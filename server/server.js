@@ -1,4 +1,4 @@
-// js web serve, like gin in go
+// js web server, like gin in go
 const express = require('express');
 const path = require('path');
 const bcrypt = require('bcrypt'); 
@@ -14,16 +14,25 @@ const swaggerUi = require('swagger-ui-express');
 // logger 
 const logger = require('./logger/winston')
 
+// jwt-token lib
+const jwt = require('jsonwebtoken');
+const jwtMiddleware = require('./middleware/cookieJwtAuth')
+
 const app = express();
 const port = process.env.SERVER_PORT || 3000; 
+
+// for cookies to work on web server
+const cookieParser = require('cookie-parser');
+const { log } = require('console');
 
 // 1) middleware for using json
 // 2) for html to send form-data to backend
 // 3) folder for front-end files
+// 4) cookies
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
-
+app.use(cookieParser());
 
 // Swagger Setup
 const swaggerOptions = {
@@ -57,12 +66,29 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
+app.get('/logout', (req, res) => {
+    // Удаляем куки с токеном
+    res.clearCookie('token');
+    
+    // Перенаправляем на главную страницу
+    res.redirect('/');
+});
+
+
+// to check cookies
+app.get('/api/auth-status', (req, res) => {
+    const token = req.cookies.token;
+    res.json({
+        isLoggedIn: !!token
+    });
+});
+
 // Weather Page
-app.get('/weather', (req, res) => {
+app.get('/weather', jwtMiddleware.cookieWithAuth, (req, res) => {
     res.sendFile(path.join(__dirname, '../public/weather', 'weather.html'));
 });
 
-app.get('/login', (req, res) => {
+app.get('/registration', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'signup.html'));
 });
 
@@ -121,37 +147,63 @@ app.get('/signin', (req, res) => {
  *                   example: "Server error"
  */
 app.post('/login', async (req, res) => {
-    const { email, password } = req.body; 
-
+    const { email, password } = req.body;
+    
     if (!email || !password) {
-        logger.warn('Missing email or password');
-        return res.status(400).send('Missing email or password');
+      logger.warn('Missing email or password');
+      return res.status(400).json({ 
+        error: 'Missing email or password'
+      });
     }
-
+  
     try {
-        const result = await pool.query(
-            'SELECT * FROM users WHERE email = $1',
-            [email]
-        );
-
-        if (result.rows.length === 0) {
-            logger.warn('Invalid credentials (email)');
-            return res.status(400).send('Invalid credentials(email)');
-        }
-
-        const user = result.rows[0];
-        const isValidPassword = await bcrypt.compare(password, user.password); // Проверка хеша пароля
-
-        if (!isValidPassword) {
-            logger.warn('Invalid credentials (password)');
-            return res.status(400).send('Invalid credentials(password)');
-        }
-
-        logger.info(`Login successful for user: ${email}`);
-        res.send('Login successful');
+      const result = await pool.query(
+        'SELECT * FROM users WHERE email = $1',
+        [email]
+      );
+  
+      if (result.rows.length === 0) {
+        logger.warn('Invalid credentials (email)');
+        return res.status(400).json({
+          error: 'Invalid credentials'
+        });
+      }
+  
+      const user = result.rows[0];
+      const isValidPassword = await bcrypt.compare(password, user.password);
+      
+      if (!isValidPassword) {
+        logger.warn('Invalid credentials (password)');
+        return res.status(400).json({
+          error: 'Invalid credentials'
+        });
+      }
+  
+      const token = jwt.sign(
+        { id: user.id },
+        process.env.JWT_SECRET,
+        { expiresIn: '1h' }
+      );
+  
+      res.cookie("token", token, {
+        httpOnly: true,
+        secure: false,
+        sameSite: 'strict',
+      });
+  
+      logger.info(`Login successful for user: ${email}`);
+      
+      return res.status(200).json({
+        success: true,
+        message: 'signup_successful',
+        redirectUrl: '/weather'  // Фронтенд сам решит, делать редирект или нет
+      });
+  
     } catch (error) {
-        logger.error(error.message);
-        res.status(500).send('Server error');
+      logger.error(error.message);
+      return res.status(500).json({
+        error: 'Server error'
+      });
     }
 });
 
@@ -208,12 +260,15 @@ app.post('/login', async (req, res) => {
  *                   type: string
  *                   example: "Server error"
  */
-app.post('/signin', async (req, res) => {
+app.post('/signup', async (req, res) => {
     const { email, name, password } = req.body;
 
     if (!email || !name || !password) {
         logger.warn('Missing email, name, or password in request body');
-        return res.status(400).send('Missing email, name, or password');
+        return res.status(400).json({ 
+            type: 'error', 
+            message: 'Missing email, name, or password' 
+        });
     }
 
     try {
@@ -223,13 +278,22 @@ app.post('/signin', async (req, res) => {
             [email, name, hashedPassword]
         );
         logger.info(`User signed up: email=${email}`);
-        res.send('Sign In successful');
+        res.status(200).json({ 
+            type: 'success', 
+            message: 'Sign In successful' 
+        });
     } catch (error) {
         logger.error(`Error during sign up: ${error.message}`);
         if (error.code === '23505') {
-            return res.status(400).send('Email already exists');
+            return res.status(400).json({ 
+                type: 'error', 
+                message: 'Email already exists' 
+            });
         }
-        res.status(500).send('Server error');
+        res.status(500).json({ 
+            type: 'error', 
+            message: 'Server error' 
+        });
     }
 });
 
@@ -490,7 +554,7 @@ app.get('/api/v1/today/weather/:city', async (req, res) => {
     const { city } = req.params;
     try {
         const currentDate = new Date();
-        const year = currentDate.getFullYear() + 1;
+        const year = currentDate.getFullYear();
         const month = currentDate.getMonth() + 1;
         const day = currentDate.getDate();
 
@@ -592,7 +656,7 @@ app.get('/api/v1/week/weather/:city', async (req, res) => {
             const nextDate = new Date(currentDate);
             nextDate.setDate(currentDate.getDate() + i);
 
-            const year = nextDate.getFullYear() + 1;
+            const year = nextDate.getFullYear();
             const month = nextDate.getMonth() + 1;
             const day = nextDate.getDate();
 

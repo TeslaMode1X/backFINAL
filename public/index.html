@@ -10,10 +10,35 @@
     <div class="container">
         <h1>Welcome</h1>
         <div class="button-container">
-            <a href="signin" class="button">Sign In</a>
-            <a href="login" class="button">Sign Up</a>
-            <a href="weather" class="button">See weather without registration</a>
+            <a href="signin" id="signInBtn" class="button">Sign In</a>
+            <a href="registration" id="signUpBtn" class="button">Sign Up</a>
+            <a href="weather" id="seeWeatherBtn" class="button">See weather without registration</a>
+            <a href="logout" id="logOutBtn" class="button">Log Out</a>
         </div>
     </div>
+    <div id="toast-container"></div>
+    <script src="./js/client.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/api/auth-status');
+                const data = await response.json();
+                
+                if (data.isLoggedIn) {
+                    document.getElementById('signInBtn').style.display = 'none';
+                    document.getElementById('signUpBtn').style.display = 'none';
+                    document.getElementById('logOutBtn').style.display = 'inline-block';
+                    document.getElementById('seeWeatherBtn').style.display = 'inline-block';
+                } else {
+                    document.getElementById('logOutBtn').style.display = 'none';
+                    document.getElementById('seeWeatherBtn').style.display = 'none';
+                    document.getElementById('signInBtn').style.display = 'inline-block';
+                    document.getElementById('signUpBtn').style.display = 'inline-block';
+                }
+            } catch (error) {
+                console.error('Error fetching auth status:', error);
+            }
+        });
+        </script>
 </body>
 </html>
