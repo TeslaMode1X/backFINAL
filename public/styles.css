@@ -72,3 +72,46 @@ input {
     display: inline-block;
     margin: 10px;
 }
+
+/* smth like modal windows */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+
+.toast.success {
+    background-color: green;
+}
+
+.toast.warning {
+    background-color: yellow;
+    color: black;
+}
+
+.toast.error {
+    background-color: red;
+}
+
+.toast .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

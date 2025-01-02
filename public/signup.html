@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Sign Up</h1>
-        <form action="/signin" method="post">
+        <form id="signUpForm">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -26,5 +26,8 @@
         </form>
         <a href="/" class="back-link">Back to Home</a>
     </div>
+    
+    <div id="toast-container"></div>
+    <script src="./js/client.js"></script>
 </body>
 </html>
